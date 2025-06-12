@@ -12,7 +12,12 @@
     <input type="text" id="searchInput" placeholder="Escribe un tema...">
     <button onclick="buscarGIFs()">Buscar</button>
     <div id="gifContainer"></div>
-    <button id="nextPage" onclick="paginaSiguiente()">Siguiente</button>
+
+    <div class="pagination">
+      <button id="prevPage" onclick="paginaAnterior()">« Anterior</button>
+      <span id="pageNumber">Página 1</span>
+      <button id="nextPage" onclick="paginaSiguiente()">Siguiente »</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
