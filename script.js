@@ -14,7 +14,7 @@ function cargarGIFs() {
   const query = document.getElementById("searchInput").value.trim();
   if (!query) return;
 
-  const apiKey = "T7vqS61zYIm6IkP2JKdXTlVuZgaXQYIf"; // Reemplaza esto con tu propia API key de Giphy
+  const apiKey = "T7vqS61zYIm6IkP2JKdXTlVuZgaXQYIf";
   const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURIComponent(query)}&limit=9&offset=${offset}`;
 
   fetch(url)
